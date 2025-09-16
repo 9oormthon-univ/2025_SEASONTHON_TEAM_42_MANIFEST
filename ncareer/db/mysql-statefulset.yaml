@@ -22,13 +22,25 @@ spec:
             - "--collation-server=utf8mb4_0900_ai_ci"
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: "------!"
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: MYSQL_ROOT_PASSWORD
             - name: MYSQL_DATABASE
-              value: "-----"
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: MYSQL_DATABASE
             - name: MYSQL_USER
-              value: "-----"
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: MYSQL_USER
             - name: MYSQL_PASSWORD
-              value: "-----!"
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: MYSQL_PASSWORD
           ports:
             - containerPort: 3306
           readinessProbe:

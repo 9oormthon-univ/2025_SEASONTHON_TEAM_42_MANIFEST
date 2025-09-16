@@ -67,3 +67,4 @@ keys/
 terraform.tfstate*
 terraform.tfvars
 env/*.tfvars
+/ncareer/db/mysql-secret.yaml

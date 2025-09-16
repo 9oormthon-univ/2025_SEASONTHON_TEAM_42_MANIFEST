@@ -8,8 +8,8 @@ spec:
   project: default
   source:
     repoURL: https://github.com/9oormthon-univ/2025_SEASONTHON_TEAM_42_MANIFEST.git
-    targetRevision: main           # develop 브랜치로 바꿔도 됨
-    path: ncareer                  # <- 이 디렉터리만 동기화
+    targetRevision: main
+    path: ncareer
     directory:
       recurse: true
   destination:
