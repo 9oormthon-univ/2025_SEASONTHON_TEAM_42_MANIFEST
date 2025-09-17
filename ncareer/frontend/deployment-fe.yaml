@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ncareer
+  namespace: ncareer
+spec:
+  revisionHistoryLimit: 2
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ncareer-fe
+  template:
+    metadata:
+      labels:
+        app: ncareer-fe
+    spec:
+      containers:
+        - name: ncareer-fe
+          image: leosunghojung/ncareer-fe:a216966
+          ports:
+            - containerPort: 3000
