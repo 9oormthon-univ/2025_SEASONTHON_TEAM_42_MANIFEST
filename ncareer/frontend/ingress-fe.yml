@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ncareer-ingress
+  name: ncareer-fe-ingress
   namespace: ncareer
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
