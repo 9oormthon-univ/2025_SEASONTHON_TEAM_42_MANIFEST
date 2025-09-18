@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: ncareer-fe
-          image: leosunghojung/ncareer-fe:6aa2592
+          image: leosunghojung/ncareer-fe:f37bd22
           ports:
             - containerPort: 3000
