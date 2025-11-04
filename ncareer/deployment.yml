@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: ncareer
-          image: leosunghojung/ncareer:29f508d
+          image: leosunghojung/ncareer:eb6813b
           ports:
             - containerPort: 8080
           env:
